@@ -1,66 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/assets/images/logos/IsologoSinFondo.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/images/logos/IsologoSinFondo.png"
+    />
     <title>Zenith Register</title>
-</head>
+  </head>
 
-<body>
-    <form action="">
-        <fieldset>
-            <legend>
-                <h1>Ingresa tus Datos</h1>
-            </legend>
-            <label for="registerName">Nombre</label>
-            <input type="text" placeholder="Nombre Real" id="registerName" name="first_name">
-            <br><br>
-            <label for="registerMiddledName">Segundo Nombre</label>
-            <input type="text" placeholder="Si Aplica" id="registerMiddledName" name="middle_name">
-            <br><br>
-            <label for="registerLastName">Apellido</label>
-            <input type="text" placeholder="Primer Apellido" id="registerLastName" name="last_name">
-            <br><br>
-            <label for="registerSecondLastName">Segundo Apellido</label>
-            <input type="text" placeholder="Si Aplica" id="registerSecondLastName" name="second_last_name">
-            <br><br>
-            <label for="GenderRegister">Género</label>
-            <select name="GenderRegister" id="GenderRegister">
-                <option value="" disabled selected hidden>Selecciona tu Género</option>
-                <option value="femenine">Femenino</option>
-                <option value="masculine">Masculino</option>
-                <option value="nonBinary">No Binario</option>
-                <option value="preferNotSay">Prefiero no Decirlo</option>
-                <option value="others">Otros</option>
-            </select>
-            <br><br>
-            <label for="countryRegister">Pais de Residencia</label>
-            <select name="countryRegister" id="countryRegister">
-                <option value="" disabled selected hidden>Selecciona tu País</option>
-                <option value="colombia">Colombia</option>
-                <option value="venezuela">Venezuela</option>
-            </select>
-            <br><br>
-            <label for="birthDate">Fecha de Nacimiento</label>
-            <input type="date" id="birthDate" name="birthdate">
-            <br><br>
-            <label for="nicknameRegister">Nombre de Usuario</label>
-            <input type="text" placeholder="Crea un Nombre" id="nicknameRegister" name="nicknameRegister">
-            <br><br>
-            <label for="emailRegister">Correo Electronico</label>
-            <input type="email" placeholder="Integra un Correo" id="emailRegister" name="emailRegister">
-            <br><br>
-            <label for="passwordRegister">Ingresa una Contraseña</label>
-            <input type="password" placeholder="Crea una Contraseña" id="passwordRegister" name="passwordRegister">
-            
-            <br><br>
-            <a href=""><button type="button">Ingersar</button></a>
-            <br><br>
-            <a href="/pages/auth/login.html"><button type="button">Ya tengo una cuenta</button></a>
-            <br><br>
-            <a href="/pages/landing/index.html"><button type="button">Volver al inicio</button></a>
-        </fieldset>
-    </form>  
-</body>
+  <body>
+    <form action="/pages/landing/index.html">
+      <fieldset>
+        <legend>
+          <h1>Ingresa tus Datos</h1>
+        </legend>
+        <label for="registerName">Nombre</label>
+        <input
+          type="text"
+          placeholder="Nombre Real"
+          id="registerName"
+          name="first_name"
+          required
+        />
+        <br /><br />
+        <label for="registerMiddledName">Segundo Nombre</label>
+        <input
+          type="text"
+          placeholder="Si Aplica"
+          id="registerMiddledName"
+          name="middle_name"
+          required
+        />
+        <br /><br />
+        <label for="registerLastName">Apellido</label>
+        <input
+          type="text"
+          placeholder="Primer Apellido"
+          id="registerLastName"
+          name="last_name"
+          required
+        />
+        <br /><br />
+        <label for="registerSecondLastName">Segundo Apellido</label>
+        <input
+          type="text"
+          placeholder="Si Aplica"
+          id="registerSecondLastName"
+          name="second_last_name"
+          required
+        />
+        <br /><br />
+        <label for="GenderRegister">Género</label>
+        <select name="GenderRegister" id="GenderRegister" required>
+          <option value="" disabled selected hidden>
+            Selecciona tu Género
+          </option>
+          <option value="femenine">Femenino</option>
+          <option value="masculine">Masculino</option>
+          <option value="nonBinary">No Binario</option>
+          <option value="preferNotSay">Prefiero no Decirlo</option>
+          <option value="others">Otros</option>
+        </select>
+        <br /><br />
+        <label for="countryRegister">Pais de Residencia</label>
+        <select name="countryRegister" id="countryRegister" required>
+          <option value="" disabled selected hidden>Selecciona tu País</option>
+          <option value="colombia">Colombia</option>
+          <option value="venezuela">Venezuela</option>
+        </select>
+        <br /><br />
+        <label for="birthDate">Fecha de Nacimiento</label>
+        <input type="date" id="birthDate" name="birthdate" required />
+        <br /><br />
+        <label for="nicknameRegister">Nombre de Usuario</label>
+        <input
+          type="text"
+          placeholder="Crea un Nombre"
+          id="nicknameRegister"
+          name="nicknameRegister"
+          required
+        />
+        <br /><br />
+        <label for="emailRegister">Correo Electronico</label>
+        <input
+          type="email"
+          placeholder="Integra un Correo"
+          id="emailRegister"
+          name="emailRegister"
+          required
+        />
+        <br /><br />
+        <label for="passwordRegister">Ingresa una Contraseña</label>
+        <input
+          type="password"
+          placeholder="Crea una Contraseña"
+          id="passwordRegister"
+          name="passwordRegister"
+          required
+        />
+
+        <br /><br />
+        <a href="/pages/landing/index.html"
+          ><button type="submit">Ingresar</button></a
+        >
+        <br /><br />
+        <a href="/pages/auth/login.html"
+          ><button type="button">Ya tengo una cuenta</button></a
+        >
+        <br /><br />
+        <a href="/pages/landing/index.html"
+          ><button type="button">Volver al inicio</button></a
+        >
+      </fieldset>
+    </form>
+  </body>
 </html>
